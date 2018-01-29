@@ -1,0 +1,26 @@
+{
+  "name": "crm-graphql-server",
+  "version": "1.0.0",
+  "description": "GraphQL server for a CRM",
+  "main": "index.js",
+  "babel": { "presets": [ "env" ] },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=env", "start": "nodemon --exec npm run babel-node -- ./index.js", "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcDalin/crm-graphql-server.git"
+  },
+  "author": "dc_dalin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcDalin/crm-graphql-server/issues"
+  },
+  "homepage": "https://github.com/dcDalin/crm-graphql-server#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.14.11"
+  }
+}
